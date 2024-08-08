@@ -20,7 +20,6 @@ svg {
 .overall-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    height: 100vh;
 }
 
 /* The sidebar styling */
@@ -32,6 +31,8 @@ svg {
     flex-direction: column;
     gap: 4rem;
     padding: 1.5rem 1.5rem;
+    position: relative;
+    z-index: 2;
 
 }
 
@@ -72,6 +73,10 @@ svg {
 }
 
 /* The header styling */
+.main-content {
+    background-color: var(--grey-color);
+
+}
 
 .header {
     display: grid;
@@ -79,7 +84,9 @@ svg {
     background-color: var(--white-color);
     padding: 1rem 3rem;
     gap: 2rem;
-    box-shadow: 0 .2rem .5rem var(--grey-color);
+    box-shadow: 0 .2rem .5rem #c5cad1;
+    position: relative;
+    z-index: 1;
 }
 
 .search-bar {
@@ -147,4 +154,57 @@ input#search-bar {
     padding: 1rem 2.5rem;
     border-radius: 20px;
     font-size: 1.4rem;
+}
+
+/* The content section styling */
+
+.content {
+    background-color: var(--grey-color);
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    padding: 1.5rem 2rem;
+    gap: 1rem;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.cards .card {
+    background-color: var(--white-color);
+    border-left: 5px solid var(--gold-color);
+    border-radius: 5px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    box-shadow: 0 .2rem .5rem #c5cad1;
+    height: 150px;
+}
+
+.card .title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.card .description {
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #808080;
+}
+
+.card .icons {
+    margin-top: auto;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    fill: #333333;
 }
