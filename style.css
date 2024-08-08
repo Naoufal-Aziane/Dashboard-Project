@@ -79,6 +79,7 @@ svg {
     background-color: var(--white-color);
     padding: 1rem 3rem;
     gap: 2rem;
+    box-shadow: 0 .2rem .5rem var(--grey-color);
 }
 
 .search-bar {
