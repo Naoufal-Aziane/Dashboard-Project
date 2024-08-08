@@ -13,11 +13,17 @@
     box-sizing: border-box;
 }
 
+svg {
+    width: 25px;
+}
+
 .overall-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
     height: 100vh;
 }
+
+/* The sidebar styling */
 
 .sidebar {
     background-color: var(--bleu-color);
@@ -63,4 +69,81 @@
 .nav-element svg {
     width: 25px;
     fill: var(--white-color);
+}
+
+/* The header styling */
+
+.header {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    background-color: var(--white-color);
+    padding: 1rem 3rem;
+    gap: 2rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+input#search-bar {
+    flex: 1;
+    background-color: var(--grey-color);
+    border: none;
+    border-radius: 10px;
+    height: 2.5rem;
+}
+
+.user-profile {
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.user-profile img {
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+.welcome-section {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.welcome-section img {
+    width: 65px;
+    border-radius: 50%;
+}
+
+.welcome-section p {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.welcome-section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.bleu-button {
+    background-color: var(--bleu-color);
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border-radius: 20px;
+    font-size: 1.4rem;
 }
