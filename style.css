@@ -1,0 +1,11 @@
+:root {
+    --bleu-color: #1992d4;
+    --white-color: #fff;
+    --grey-color: #e2e8f0;
+    --gold-color: #F0B429;
+}
+
+.overall-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
