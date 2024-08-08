@@ -208,3 +208,51 @@ h2 {
     gap: 1rem;
     fill: #333333;
 }
+
+/* anouncements-section-content styling */
+
+.anouncements-section-content {
+    background-color: var(--white-color);
+    padding: 0 2rem;
+    border-radius: 5px;
+    box-shadow: 0 .2rem .5rem #c5cad1;
+    margin-bottom: 8px;
+}
+
+.announcement {
+    padding: 1.5rem 0;
+}
+
+.announcement:not(:last-child) {
+    border-bottom: 2px solid var(--grey-color);
+}
+
+.announcement-title {
+    margin-bottom: 5px;
+}
+
+/* trending-section-content styling */
+
+.trending-section-content {
+    background-color: var(--white-color);
+    padding: 0 2rem;
+    border-radius: 5px;
+    box-shadow: 0 .2rem .5rem #c5cad1;
+}
+
+.trending-user {
+    display: flex;
+    padding: .9rem 0;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.trending-user-img>img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.trending-user-name {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
